@@ -1,0 +1,39 @@
+/*Default */
+/* How the User see button before any interraction*/
+.btn{
+    font-family: "Roboto";
+    color:#fcf7f8;
+    padding: 7PX 20PX 6PX 20PX;
+    border: 0;
+    outline: 0;
+    border-radius: 3px;
+    font-weight: 300px;
+    font-size: 14px;
+    margin:0 10px;
+
+    transition: 0.15s ease-in-out all;
+    box-shadow: 0.3px 3px 0 rgba(0, 0, 0, 0.25);
+
+    background:
+    linear-gradient(to right, #17828a, #16777e 50%);
+    background-position: right bottom;
+ 
+}
+/* Hover*/
+/*How the user see the button when the mouse cursor is on top of it*/
+.btn:hover{
+    cursor:pointer;
+    background-position: left bottom;
+}
+/* Active*/
+/*How the user see the button when they press it by clicking on it*/
+/*Note: In this case we want the: focus state to be to be the same as the default state */
+
+.btn:active{
+    background-position: right bottom;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+.btn:disabled{
+    background: #afafaf;
+    box-shadow: none;
+}
